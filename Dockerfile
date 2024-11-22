@@ -1,9 +1,9 @@
 # syntax=docker/dockerfile:1
 # https://hub.docker.com/_/alpine
-FROM alpine:3.19.1
+FROM alpine:3.20.3
 
-# renovate: datasource=repology depName=alpine_3_19/libcurl versioning=loose
-ENV LIBCURL_VERSION="8.5.0-r0"
+# renovate: datasource=repology depName=alpine_3_20/libcurl versioning=loose
+ENV LIBCURL_VERSION="8.9.1-r1"
 
 RUN apk update
 RUN apk add libcurl=${LIBCURL_VERSION}
